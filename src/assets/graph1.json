@@ -1,0 +1,71 @@
+{
+  "nodes": [
+    {
+      "id": "start",
+      "position": "y0",
+      "label": "MGR Form"
+    },
+    {
+      "id": "1",
+      "position": "y1",
+      "label": "HR Form"
+    },
+    {
+      "id": "2",
+      "position": "y1",
+      "label": "SEC Form"
+    },
+    {
+      "id": "3",
+      "position": "y1",
+      "label": "ENG Form"
+    },
+    {
+      "id": "4",
+      "position": "y2",
+      "label": "HR Review"
+    },
+    {
+      "id": "5",
+      "position": "y3",
+      "label": "Complete"
+    }  
+  ],
+  "links": [
+    {
+      "source": "start",
+      "target": "1",
+      "label": "Initiate"
+    },
+    {
+      "source": "start",
+      "target": "2",
+      "label": "Initiate"
+    },
+    {
+      "source": "start",
+      "target": "3",
+      "label": "Initiate"
+    },
+    {
+      "source": "1",
+      "target": "4",
+      "label": "Complete"
+    },
+    {
+      "source": "2",
+      "target": "4",
+      "label": "Complete"
+    },
+    {
+      "source": "3",
+      "target": "4",
+      "label": "Complete"
+    },
+    {
+      "source": "4",
+      "target": "5",
+      "label": "Approve"
+    }
+  ]
+}
